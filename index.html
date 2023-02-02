@@ -13,7 +13,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="myFunction()">
       <div class="container disable">
             <h2>Image Editor Lite.</h2>
             <div class="wrapper">
@@ -51,13 +51,16 @@
             <div class="controls">
                   <button class="reset-filter">Reset Filters</button>
                   <div class="row">
-                        <input type="file" class="file-input" accept="image/*" hidden>
+                        <input type="file" class="file-input" accept="image/png, image/gif, image/jpeg" hidden>
                         <button class="choose-img">Choose Image</button>
                         <button class="save-img">Save Image</button>
                   </div>
             </div>
       </div>
-
+      <div class="loaderWrapper">
+            <span class="loader"></span>
+            <p style="color: white; margin: 20px;">loading Amazing Filters !</p>
+      </div>
       <script src="script.js"></script>
 
 </body>
