@@ -3,7 +3,8 @@
 
 <head>
       <meta charset="utf-8">
-      <title>Image Editor.</title>
+      <title>Image Editor</title>
+      <link rel="icon" href="./Assets/webLogo.png">
       <link rel="stylesheet" href="style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
@@ -11,6 +12,14 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+      <link rel="manifest" href="manifest.json">
+      <script>
+            if ('serviceWorker' in navigator) {
+                  window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('./sw.js');
+                  });
+            }
+      </script>
 </head>
 
 <body onload="myFunction()">

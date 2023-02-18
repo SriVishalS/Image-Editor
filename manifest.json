@@ -1,0 +1,15 @@
+{
+      "short_name": "Image Editor",
+      "name": "Image Editor Offline Web App",
+      "icons": [
+            {
+                  "src": "./Assets/webLogo.png",
+                  "type": "image/png",
+                  "sizes": "192x192"
+            }
+      ],
+      "start_url": "index.html",
+      "display": "standalone",
+      "background_color": "#000",
+      "theme_color": "#000"
+}
